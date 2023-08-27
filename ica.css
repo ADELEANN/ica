@@ -37,7 +37,7 @@ header {
     transition: .5s;
 }
 .navigation a:hover{
-    color: blue;
+    color: rgb(76, 0, 21);
 }
 .navigation a span {
     position: absolute;
@@ -100,7 +100,7 @@ opacity: 1;
     font-weight: 300;
     text-align: justify;
 }
-.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4{
+.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4, .bgimg-5{
     
     position: relative;
     opacity: 0.8;
@@ -134,11 +134,16 @@ opacity: 1;
   }
   
   .bgimg-3 {
-    background-image: url("people-01.png");
+    background-image: url("people.jpg");
     min-height: 400px;
   }
   .bgimg-4 {
     background-image: url("culture.jpg");
+    min-height: 400px;
+    
+  }
+  .bgimg-5 {
+    background-image: url("pv1.png");
     min-height: 400px;
     
   }
@@ -160,6 +165,12 @@ opacity: 1;
     font-size: 25px;
     letter-spacing: 10px;
   }
+  h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+   
+    font: 900px "Lato", sans-serif;
+    color: #111;}
 
   h2{
     letter-spacing: 5px;
@@ -195,7 +206,7 @@ opacity: 1;
    
   }
   div.gallerybg{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
   }
   div.gallery  {
     
@@ -210,20 +221,87 @@ opacity: 1;
     overflow-y: hidden; /* Hide vertical scrollbar */
     /* overflow-x: hidden; Hide vertical scrollbar */
     position: relative;
+    opacity: 0.8;
     
 
     
   }
+  
 
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
-
+div.gallery:hover {
+  opacity: 1;
+}
   
   div.gallery img {
     padding: 10px;
     max-height:400px;
+    opacity: 1;}
+
+    .gallery :hover{
+      
+      transition: .9s ease;
+      backface-visibility: hidden;
+      transform: scale(1.1);
+      opacity: 1;
+      
+    }
+
     
+   
+
+ 
+  
+  .ahmedabad {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+   
+    
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+   
+    
+  }
+  
+
+  
+  .text {
+    background-color: transparent;
+    color: rgb(22, 12, 96);
+    font-size: 16px;
+    padding: 16px 32px;
+    padding: 10px;
+    max-height:400px;
  
   }
+  /* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 3024px OR max-height: 1964px)  {
+  .parallax img#woman {
+    
+    transform: translateY(171px);
+    max-width: 500px;
+}
+.parallax img {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  pointer-events: none;
+  margin-bottom: 5.7%;
+}
+}
